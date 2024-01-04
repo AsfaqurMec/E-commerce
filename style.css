@@ -154,4 +154,47 @@ select {
     height: 100%;
     object-fit: cover;
   }
-  
+.services {
+   display: flex; 
+   width: 90%;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(239, 211, 216);
+   margin: 2rem auto;
+   border-radius: .8rem;
+} 
+.services-a {
+    display: flex; 
+   flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.3rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #000;
+} 
+.catagory {
+    display: flex; 
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 242, 242, 0.742);
+    margin: 2rem auto;
+    padding: 1rem 0.3rem;
+    border-radius: .8rem;
+    gap: .7rem;
+ } 
+.catagory-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #000;
+} 
+.catagory-cart img {
+    width: 50%;
+    height: 50%;
+}
