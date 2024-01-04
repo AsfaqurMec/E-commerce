@@ -12,29 +12,34 @@ body {
     text-decoration: none;
 }
 .but1 {
-    background-color: rgb(0, 0, 0);
+    background-color:  #d8db17;
     height: 2.5rem;
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
-    color: #ffffff;
-    padding: .4rem;
+    color: #010101;
+    padding: .4rem .6rem .4rem;
     border-radius: 3px;
     cursor: pointer;
-    text-align: center;
-    font-family: "Lato",sans-serif;
+    
+    border: 2px solid rgba(12, 12, 12, 0.881);
 }
 .but2 {
-    background-color: rgb(6, 6, 6);
+    background-color: #cdd015;
     height: 2.5rem;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
-    color: #ffffff;
-    padding: .4rem;
+    color: #000000;
+    padding: .4rem .6rem .4rem;
     border-radius: 3px;
     cursor: pointer;
-    text-align: center;
+    
+    border: 2px solid rgba(7, 7, 7, 0.881);
 }
 .header-section {
     display: flex;
@@ -57,7 +62,7 @@ body {
     font-size: 1.5rem;
     padding-top: 1rem;
     
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
     background-color: #ffffff;
 }
 .logo {
@@ -65,13 +70,15 @@ body {
 }
 .search-bar {
     display: flex;
+    
 }
 .search-bar input {
     padding: .5rem;
     height: 5vh;
     width: 20rem;
+    font-size: 1rem;
     border-radius: .2rem 0 0 .2rem;
-    border: 2px solid gray;
+    border: 2px solid rgba(146, 145, 145, 0.881);
 }
 .search-bar i {
     display: flex;
@@ -79,6 +86,72 @@ body {
     align-items: center;
     width: 10%;
     border-radius: 0 .2rem .2rem 0;
-    background-color: #999c1d;
+    background-color: #d0d311;
     height: 5vh;
 }
+.account-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+select {
+    border: none;
+    background-color: azure;
+    font-size: x-large; 
+}
+#sel1 {
+    width: 7rem;
+}
+#sel2 {
+    width: 8rem;
+}
+.nav-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: azure;
+    font-size: x-large;
+}
+
+.nav-list1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.nav-list2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-link {
+    color: #000;
+}
+.swiper {
+    width: 100%;
+    height: 71vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
