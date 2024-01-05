@@ -321,3 +321,116 @@ border-radius: 6px;
     padding: .6rem 0.6rem .6rem 0.6rem;
     border: 2px solid #d0d311;
 }
+
+/*  footer start  */ 
+
+.footer {
+    
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 1rem;
+    font-size: 1.3rem;
+    color: #787777;
+    margin: 5rem auto;
+}
+.media-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.media-section  h2 {
+    color:  #ff8040;
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    padding-left: .5rem;
+}
+.media img {
+    width: 4rem;
+    height: 7vh;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5rem; 
+}
+.feature  a {
+    color: #787777;
+} 
+.feature  h2 {
+    padding-bottom: .5rem;
+    color:  #ff8040;
+}
+.contract {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   margin-top: 2rem;
+    font-size: x-large;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: .5rem;
+    padding-left: .5rem;
+}
+.payment  h2 {
+    padding-bottom: .5rem;
+    color:  #ff8040;
+}
+.payment .media img {
+    width: 5rem;
+    height: 7vh;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.contract-section {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 1.5rem;
+}
+.contract-section img {
+    width: 12rem;
+    height: 10vh;
+}
+.contract-detail {
+    display: flex;
+    flex-direction: column; 
+    
+}
+.download {
+    display: flex;
+    flex-direction: column; 
+   gap: 1rem;
+}
+.download-option {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.download img {
+    width: 8rem;
+    height: 7vh;
+    border-radius: .5rem;
+}
+.rights {
+    background-color: #543a12;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.rights p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: x-large;
+}
