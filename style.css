@@ -13,14 +13,14 @@ body {
 }
 .but1 {
     background-color:  #d8db17;
-    height: 2.5rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     color: #010101;
-    padding: .4rem .6rem .4rem;
+    padding: .4rem .6rem .4rem .6rem;
     border-radius: 3px;
     cursor: pointer;
     
@@ -28,14 +28,14 @@ body {
 }
 .but2 {
     background-color: #cdd015;
-    height: 2.5rem;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     color: #000000;
-    padding: .4rem .6rem .4rem;
+    padding: .4rem .6rem .4rem .6rem;
     border-radius: 3px;
     cursor: pointer;
     
@@ -131,7 +131,7 @@ select {
     z-index: 1000;
     background-color: #e0afcef0;
     padding: 1rem 0 1rem 1rem;
-font-size: 1.8rem;
+
 margin-top: .8px;
 border-radius: 6px;
 }
@@ -147,7 +147,7 @@ border-radius: 6px;
     z-index: 1000;
     background-color: #e3bbecf0;
     padding: 1rem;
-font-size: 1.8rem;
+
 margin-top: .8px;
 border-radius: 6px;
 }
@@ -163,11 +163,11 @@ border-radius: 6px;
     position: absolute;
     z-index: 1000;
     background-color: #e6cce8f0;
-    margin-left: 18.4rem;
-    width: 100%;
+    margin-left: 15.3rem;
+    width: 80%;
     top: 0rem;
     padding: 1rem 0 1rem 1rem;
-font-size: 1.8rem;
+
 margin-top: 0px;
 border-radius: 6px;
 }
@@ -245,29 +245,35 @@ border-radius: 6px;
     font-size: 1.4rem;
     color: #000;
 } 
+.services-a div {
+    text-align: center;
+}
 .services:hover {
     background-color: rgb(231, 183, 192);
 }
 .catagory {
     display: flex; 
     width: 90%;
+    height: 150px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(243, 242, 242, 0.742);
     margin: 2rem auto;
     padding: 1rem 0.3rem;
     border-radius: .8rem;
-    gap: .7rem;
+ 
  } 
  .catagory:hover {
     background-color: rgb(230, 229, 229);
  }
 .catagory-cart {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: .5rem;
     color: #000;
 } 
@@ -341,7 +347,7 @@ border-radius: 6px;
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
     gap: .5rem;
-    
+
     font-size: 1.3rem;
     color: #787777;
     margin: 5rem 4rem;
@@ -359,7 +365,7 @@ border-radius: 6px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    
     gap: .5rem;
     padding-left: .5rem;
 }
@@ -429,6 +435,20 @@ border-radius: 6px;
     flex-direction: column; 
     
 }
+.pay-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.pay-type img {
+    width: 4rem;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 .download {
     display: flex;
     flex-direction: column; 
@@ -437,6 +457,7 @@ border-radius: 6px;
 .download-option {
     display: flex;
     flex-direction: row;
+    
     gap: .5rem;
 }
 .download img {
@@ -462,6 +483,11 @@ border-radius: 6px;
          
          height: 25vh;
      }
+     .catagory{
+    
+        gap: 0rem;
+     
+    } 
     .featured-body {
         display: grid;
         grid-template-columns: repeat(4,minmax(0,1fr));
@@ -471,4 +497,173 @@ border-radius: 6px;
     .footer {
         margin: 5rem 2rem;
     }
+}
+@media (max-width :768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .swiper {
+       
+        height: 55vh;
+        
+      }
+      .services {
+   
+        width: 100%;
+       
+        margin: 1rem auto;
+       
+     } 
+     .services-a {
+        
+         
+         font-size: .7rem;
+       
+     } 
+    .services-a {
+        font-size: 1rem;
+    }
+    
+    .footer {
+    
+       
+        gap: 1rem;
+    
+        font-size: 1rem;
+        color: #787777;
+        margin: 5rem 3rem;
+    }
+    .media {
+        padding-left: .2rem;
+        flex-direction: column;
+        
+    }
+
+}
+@media (max-width: 428px) {
+    .but1 {
+      
+        font-size: .7rem;  
+    }
+    .but2 {
+      
+        font-size: .7rem;  
+    } 
+    .logo {
+        font-size: 1rem;
+    }
+    .search-bar input {
+       
+        height: 4vh;
+        width: 15rem;
+        font-size: .8rem;
+        
+    }
+    .search-bar i {
+       
+        width: 20%;
+        font-size: medium;
+        height: 4vh;
+    } 
+    .account-section {
+        display: none;
+    }
+    .nav-lower {
+       
+        font-size: large;
+    }
+    .nav-list1 {
+      
+        justify-content: flex-start;
+       
+        gap: 1.5rem;
+        
+    }
+    .nav-link .dropdown1 {
+        margin-left: -3rem;
+    }
+    .sub1 .dropdown3 {
+       
+        margin-left: 10.3rem;
+       
+    }
+    .nav-list2 {
+        display: none;
+    }
+    .swiper {
+       
+        height: 40vh;
+        
+      }
+      .services {
+        display: none;
+      }
+      .catagory {
+      display: none;
+        width: 100%;
+        height: 150px;
+       
+        margin: 1rem auto;
+        padding: 1rem 0.3rem;
+        
+     
+     } 
+    
+    .catagory-cart {
+       gap: .1rem;
+       font-size: 1rem;
+    }
+    .featured-header {
+       
+        font-size: 1.5rem;
+      
+    } 
+    .featured-body {
+     
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: .5rem;
+        margin: 5rem 1rem;
+    }
+    .footer {
+    
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: .5rem;
+    
+        font-size: 1.1rem;
+        color: #787777;
+        margin: 5rem 1rem;
+    }
+    .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        gap: 0.5rem; 
+    }
+    .contract {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       margin-top: 2rem;
+        font-size: large;
+        gap: 2rem;
+    } 
+    .outlate {
+        display: flex;
+        gap: 1rem;
+    }
+    .download {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+       gap: 1rem;
+    }
+    .download-option {
+        display: flex;
+        flex-direction: row;
+        
+        gap: .5rem;
+    } 
 }
