@@ -48,12 +48,15 @@ body {
     align-items: center;
     color: #ffffff;
     background-color: black;
-    height: 5vh;
+    padding: 1rem 0;
     
 }
 .header-section p {
     font-size: large;
 }
+.header-section .account-section {
+    display: none;
+} 
 .nav-upper {
     display: flex;
     flex-direction: row;
@@ -252,13 +255,12 @@ border-radius: 6px;
     background-color: rgb(231, 183, 192);
 }
 .catagory {
-    display: flex; 
+    display: flex;  display: grid;
+    grid-template-columns: repeat(8,minmax(0,1fr));
     width: 90%;
-    height: 150px;
-    flex-direction: row;
+    
     justify-content: space-around;
-    align-items: center;
-    background-color: rgba(243, 242, 242, 0.742);
+    background-color: rgba(228, 226, 226, 0.742);
     margin: 2rem auto;
     padding: 1rem 0.3rem;
     border-radius: .8rem;
@@ -509,7 +511,7 @@ border-radius: 6px;
       }
       .services {
    
-        width: 100%;
+        width: 95%;
        
         margin: 1rem auto;
        
@@ -517,13 +519,18 @@ border-radius: 6px;
      .services-a {
         
          
-         font-size: .7rem;
+         font-size: 1rem;
        
      } 
-    .services-a {
-        font-size: 1rem;
-    }
     
+    .catagory {
+         
+        width: 95%;
+    }
+    .product-image {
+      
+        height: 20vh;
+    }
     .footer {
     
        
@@ -541,6 +548,13 @@ border-radius: 6px;
 
 }
 @media (max-width: 428px) {
+    .header-section .section2 {
+        display: none;
+    }
+    .header-section .account-section {
+        display: block;
+        display: flex;
+    } 
     .but1 {
       
         font-size: .7rem;  
@@ -580,12 +594,17 @@ border-radius: 6px;
         
     }
     .nav-link .dropdown1 {
-        margin-left: -3rem;
+        margin-left: -4rem;
     }
     .sub1 .dropdown3 {
        
         margin-left: 10.3rem;
        
+    }
+    .nav-link .dropdown2  {
+        
+        margin-left: -1rem;
+        
     }
     .nav-list2 {
         display: none;
@@ -596,15 +615,19 @@ border-radius: 6px;
         
       }
       .services {
-        display: none;
+        
+        width: 95%;
+
       }
+      .services-a {
+        font-size: .7rem;
+        gap: .5rem;
+    }
       .catagory {
-      display: none;
-        width: 100%;
-        height: 150px;
-       
+         
+        grid-template-columns: repeat(4,minmax(0,1fr));
         margin: 1rem auto;
-        padding: 1rem 0.3rem;
+       gap: 1rem;
         
      
      } 
