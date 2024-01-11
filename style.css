@@ -12,23 +12,8 @@ body {
     text-decoration: none;
 }
 .but1 {
-    background-color:  #d8db17;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    color: #010101;
-    padding: .4rem .6rem .4rem .6rem;
-    border-radius: 3px;
-    cursor: pointer;
-    
-    border: 2px solid rgba(12, 12, 12, 0.881);
-}
-.but2 {
-    background-color: #cdd015;
-   
+    background-color:  #c7e022;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +23,8 @@ body {
     padding: .4rem .6rem .4rem .6rem;
     border-radius: 3px;
     cursor: pointer;
-    
-    border: 2px solid rgba(7, 7, 7, 0.881);
 }
+
 .header-section {
     display: flex;
     flex-direction: row;
@@ -78,7 +62,7 @@ body {
 .search-bar input {
     padding: .5rem;
     height: 5vh;
-    width: 20rem;
+    width: 25rem;
     font-size: 1rem;
     border-radius: 1rem 0 0 1rem;
     border: 2px solid rgba(146, 145, 145, 0.881);
@@ -191,22 +175,123 @@ border-radius: 6px;
     color: #000;
 }
 .help {
-    font-size: large;
+    font-size: 1.5rem;
     position: absolute;
     position: fixed;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 1rem;
-    bottom: 1rem;
-    width: 4rem;
-    height: 4.5vh;
-    border-radius: 1rem;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
     text-align: center;
-    background-color: #00f80c;
+    background-color: #cecdcd;
     z-index: 1000;
 }
+
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #ffffff;
+    backdrop-filter: blur(20px);
+    border-radius: .5rem ;
+    border: solid 2px rgba(194, 194, 194, 0.626);
+    margin: 0 10rem;
+    position: absolute;
+     
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease;
+   z-index: 100;
+}
+.sign {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 1rem;
+    border-right: .8px solid #000000;
+    padding: 2rem;
+}
+.sign1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+.sign-detail {
+    font-size: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 3rem;
+    padding-top: 8rem;
+    padding: 2rem;
+}
+.sign-detail p {
+   width: 95%;
+}
+.form-control.active-popup {
+    transform: scale(1);
+}
+.title {
+    padding-bottom: 1rem;
+    font-size: xx-large;
+}
+.input {
+   width: 80%;
+   height: 5vh;
+   border-radius: .3rem;
+   padding-left: 1rem;
+   font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.662);
+  background-color: #ffffff;
+  
+}
+.bd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+  
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: .6rem;
+    
+    cursor: pointer;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+}
+.btn:hover {
+    border: 3px solid black;
+    color: #000;
+    background-color: #fff;
+}
+
 .swiper {
     width: 100%;
     height: 71vh;
@@ -283,6 +368,10 @@ border-radius: 6px;
     width: 50%;
     height: 50%;
 }
+.product-section {
+    width: 80%;
+    margin: 5rem auto;
+}
 .featured-header {
     text-align: center;
     font-size: 3rem;
@@ -292,7 +381,7 @@ border-radius: 6px;
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
     gap: 2rem;
-    margin: 5rem 4rem;
+    
 }
 .product {
     position: relative;
@@ -300,7 +389,7 @@ border-radius: 6px;
  }
  .product-image {
      
-    border-radius: 5%;
+    border-radius: 2%;
      width: 100%;
      height: 35vh;
  }
@@ -308,13 +397,13 @@ border-radius: 6px;
      transform: scale(1.03);
  } 
  .product-body {
-   
-    display: flex;justify-content: flex-start;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     gap: .5rem;
-
+font-size: 1.5rem;
 } 
- 
  .cart {
     box-shadow: 0rem 0rem .8rem rgba(222, 222, 222, 0.724);
     transition: all;
@@ -323,7 +412,7 @@ border-radius: 6px;
     border: .1px solid rgba(255, 252, 252, 0.563);
     color: #000000;
     cursor: pointer;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 .cart:hover {
     background-color: #f1f0f0;
@@ -468,7 +557,7 @@ border-radius: 6px;
     border-radius: .5rem;
 }
 .rights {
-    background-color: #543a12;
+    background-color: #885b17;
     color: #ffffff;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -494,7 +583,7 @@ border-radius: 6px;
         display: grid;
         grid-template-columns: repeat(4,minmax(0,1fr));
         gap: 1rem;
-        margin: 5rem 2rem;
+       
     }
     .footer {
         margin: 5rem 2rem;
@@ -526,6 +615,10 @@ border-radius: 6px;
     .catagory {
          
         width: 95%;
+    }
+    .product-section {
+        width: 90%;
+        margin: 5rem auto;
     }
     .product-image {
       
@@ -632,10 +725,18 @@ border-radius: 6px;
      
      } 
     
+     .help {
+        font-size: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        padding: .5rem;
+        
+    }
     .catagory-cart {
        gap: .1rem;
        font-size: 1rem;
     }
+   
     .featured-header {
        
         font-size: 1.5rem;
@@ -645,8 +746,11 @@ border-radius: 6px;
      
         grid-template-columns: repeat(2,minmax(0,1fr));
         gap: .5rem;
-        margin: 5rem 1rem;
+        
     }
+    .product-body { 
+        font-size: 1rem;
+    } 
     .footer {
     
         display: grid;
