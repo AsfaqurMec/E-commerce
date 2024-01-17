@@ -34,3 +34,22 @@ btn.addEventListener('click',()=>{
 bd.addEventListener('click',()=>{
     weaper.classList.remove('active-popup');
 });
+
+
+
+ // sign in form  //
+
+ const weaper1 = document.querySelector('.form-control');
+ const btn1= document.querySelector('#but1');
+ const bd1 = document.querySelector('.bd');
+ weaper1.addEventListener('click',()=>{
+      weaper1.classList.remove('active');
+ });
+ 
+ btn1.addEventListener('click',()=>{
+     weaper1.classList.add('active-popup');
+ });
+ 
+ bd1.addEventListener('click',()=>{
+     weaper1.classList.remove('active-popup');
+ });

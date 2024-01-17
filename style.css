@@ -175,16 +175,15 @@ border-radius: 6px;
     color: #000;
 }
 .help {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     position: fixed;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     right: 2rem;
     bottom: 2rem;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: .5rem;
     text-align: center;
     background-color: #cecdcd;
@@ -225,10 +224,10 @@ border-radius: 6px;
     flex-direction: column;
     justify-content: flex-start; 
     gap: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .sign-detail {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -702,9 +701,28 @@ font-size: 1.5rem;
     .nav-list2 {
         display: none;
     }
+    .form-control {
+        width: 100%;
+    flex-direction: column;
+    margin: 0  0rem;
+    }
+    .sign {
+        width: 100%;
+        border-bottom: .8px solid #000000;  
+    }
+    .input {
+        width: 100%;
+       
+     }
+    .sign-detail {
+        margin: 2rem 0;
+        width: 90%;
+        text-align: center;
+        padding: 0rem;
+    }
     .swiper {
        
-        height: 40vh;
+        height: 35vh;
         
       }
       .services {
